@@ -1,6 +1,6 @@
 
 const winston = require("winston");
-require("winston-mongodb");
+// require("winston-mongodb");
 require('express-async-errors');
 
 process.on('uncaughtException', (ex) => {
@@ -16,4 +16,4 @@ winston.add(new winston.transports.File({
     filename: "logfile.log",
 }));
 
-winston.add(new winston.transports.MongoDB({ db: "mongodb://localhost/movies", level: "info" }));
+// winston.add(new winston.transports.MongoDB({ db: "mongodb://localhost/movies", level: "info" }));

@@ -1,3 +1,4 @@
 {
-    "name":"App name"
+    "jwtPrivateKey":"Secure_key",
+    "db":"mongodb://localhost/movies"
 }

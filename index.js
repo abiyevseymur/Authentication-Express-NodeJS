@@ -9,7 +9,7 @@ require('./startup/logging');
 require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/config')();
-
+require('./startup/prod')(app);
 
 
 if (app.get('env') === 'development') {
@@ -19,4 +19,6 @@ if (app.get('env') === 'development') {
 
 //PORT
 const port = process.env.PORT || 3000;
-app.listen(port, () => winston.info(`listening ${port}...`))
+const server = app.listen(port, () => winston.info(`listening ${port}...`));
+
+module.exports = server;
