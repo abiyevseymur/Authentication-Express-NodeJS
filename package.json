@@ -15,6 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mongodb-js/compass-aggregations": "^6.1.5",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "helmet": "^3.22.0",
